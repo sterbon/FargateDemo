@@ -19,7 +19,7 @@ db = client.test
 db = client["demo"]
 users_collection = db["users"]
 
-@app.route("api/v1/health", methods=["GET"])
+@app.route("/api/v1/health", methods=["GET"])
 def health():
 	return jsonify({'msg': 'Service healthy'}), 200
 
